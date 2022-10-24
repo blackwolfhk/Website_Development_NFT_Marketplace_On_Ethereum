@@ -14,6 +14,8 @@ constract NFTMarketplace is ERC721URIStorage{
     Counters.Counter private _tokenIds;
     Counters.Counter private _itemsSold;
 
+    unit256 listingPrice = 0.0015 ether;
+
     address payable owner;
 
     mapping(uint256 => MarketItem) private idMarketItem;
@@ -34,7 +36,24 @@ constract NFTMarketplace is ERC721URIStorage{
         bool sold
     );
 
-    constructor() ERC721("NFT Metavarse Token", "MYNFT"){
-        
+    modifier onlyOwner{
+        require(msg.sender == owner, 
+        "only owner of the marketplace can change the listing price"
+        );
+        _;
     }
+
+    constructor() ERC721("NFT Metavarse Token", "MYNFT"){
+        owner == payable(msg.sender);
+    }
+
+    function updateListingPrice(uint256 _listingPrice) 
+        public 
+        payable 
+        onlyOwner
+    {
+        listingPrice = _listingPrice;
+    }
+
+    
 }
