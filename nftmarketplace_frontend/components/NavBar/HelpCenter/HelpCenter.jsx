@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 
-// INTERNAL IMPORT
+//INTERNAL IMPORT
 import Style from "./HelpCenter.module.css";
 
 const HelpCenter = () => {

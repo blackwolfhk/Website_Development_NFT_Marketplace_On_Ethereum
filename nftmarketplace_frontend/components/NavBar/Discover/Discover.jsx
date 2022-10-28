@@ -1,14 +1,15 @@
 import React from "react";
 import Link from "next/link";
 
-// INTERNAL IMPORT
+//INTERNAL IMPORT
 import Style from "./Discover.module.css";
+
 const Discover = () => {
-  // ---------DISCOVER NAVIGATION MENU
+  //--------DISCOVER NAVIGATION MENU
   const discover = [
     {
-      name: "Collections",
-      link: "collections",
+      name: "Collection",
+      link: "collection",
     },
     {
       name: "Search",
@@ -35,7 +36,6 @@ const Discover = () => {
       link: "blog",
     },
   ];
-
   return (
     <div>
       {discover.map((el, i) => (

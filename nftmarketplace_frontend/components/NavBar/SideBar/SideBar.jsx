@@ -12,22 +12,21 @@ import {
   TiArrowSortedUp,
 } from "react-icons/ti";
 
-// INTERNAL IMPORT
+//INTERNAL IMPORT
 import Style from "./SideBar.module.css";
 import images from "../../../img";
 import Button from "../../Button/Button";
-import { StyleOutlined } from "@material-ui/icons";
 
 const SideBar = ({ setOpenSideMenu }) => {
-  //--------USESTATE
+  //------USESTATE
   const [openDiscover, setOpenDiscover] = useState(false);
   const [openHelp, setOpenHelp] = useState(false);
 
-  // ---------DISCOVER NAVIGATION MENU
+  //--------DISCOVER NAVIGATION MENU
   const discover = [
     {
-      name: "Collections",
-      link: "collections",
+      name: "Collection",
+      link: "collection",
     },
     {
       name: "Search",
@@ -54,8 +53,7 @@ const SideBar = ({ setOpenSideMenu }) => {
       link: "blog",
     },
   ];
-
-  // ---------HELP CENTER
+  //------HELP CNTEER
   const helpCenter = [
     {
       name: "About",
@@ -109,8 +107,8 @@ const SideBar = ({ setOpenSideMenu }) => {
       <div className={Style.sideBar_box}>
         <Image src={images.logo} alt="logo" width={150} height={150} />
         <p>
-          Discover the most outstanding articles on all topices of NFT & your
-          own stories and share them
+          Discover the most outstanding articles on all topices of NFT & write
+          your own stories and share them
         </p>
         <div className={Style.sideBar_social}>
           <a href="#">
@@ -174,8 +172,8 @@ const SideBar = ({ setOpenSideMenu }) => {
       </div>
 
       <div className={Style.sideBar_button}>
-        <Button btnName="Create" />
-        <Button btnName="Connect Wallet" />
+        <Button btnName="Create" handleClick={() => {}} />
+        <Button btnName="Connect Wallet" handleClick={() => {}} />
       </div>
     </div>
   );

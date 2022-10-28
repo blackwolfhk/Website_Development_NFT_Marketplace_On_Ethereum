@@ -5,7 +5,7 @@ import { MdHelpCenter } from "react-icons/md";
 import { TbDownloadOff, TbDownload } from "react-icons/tb";
 import Link from "next/link";
 
-// INTERNAL IMPORT
+//INTERNAL IMPORT
 import Style from "./Profile.module.css";
 import images from "../../../img";
 
@@ -18,12 +18,12 @@ const Profile = () => {
           alt="user profile"
           width={50}
           height={50}
-          className={Style.profile_account_account_img}
+          className={Style.profile_account_img}
         />
 
         <div className={Style.profile_account_info}>
-          <p>Black Wolf</p>
-          <small>X0456482388973223...</small>
+          <p>Shoaib Bhai</p>
+          <small>X038499382920203...</small>
         </div>
       </div>
 
@@ -59,7 +59,7 @@ const Profile = () => {
           <div className={Style.profile_menu_one_item}>
             <TbDownload />
             <p>
-              <Link href={{ pathname: "/disconect" }}>Disconnet</Link>
+              <Link href={{ pathname: "/disconnet" }}>Disconnet</Link>
             </p>
           </div>
         </div>

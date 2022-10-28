@@ -1,4 +1,4 @@
-import React, { useState, useEffect, Profiler } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 //----IMPORT ICON
@@ -6,14 +6,14 @@ import { MdNotifications } from "react-icons/md";
 import { BsSearch } from "react-icons/bs";
 import { CgMenuLeft, CgMenuRight } from "react-icons/cg";
 
-// INTERNAL IMPORT
+//INTERNAL IMPORT
 import Style from "./NavBar.module.css";
 import { Discover, HelpCenter, Notification, Profile, SideBar } from "./index";
 import { Button } from "../componentsindex";
 import images from "../../img";
 
 const NavBar = () => {
-  //----USESTATE COMPONENTS
+  //----USESTATE COMPONNTS
   const [discover, setDiscover] = useState(false);
   const [help, setHelp] = useState(false);
   const [notification, setNotification] = useState(false);
@@ -40,7 +40,7 @@ const NavBar = () => {
     }
   };
 
-  const openNotification = (e) => {
+  const openNotification = () => {
     if (!notification) {
       setNotification(true);
       setDiscover(false);
@@ -90,7 +90,7 @@ const NavBar = () => {
           </div>
         </div>
 
-        {/* END OF LEFT SECRION */}
+        {/* //END OF LEFT SECTION */}
         <div className={Style.navbar_container_right}>
           <div className={Style.navbar_container_right_discover}>
             {/* DISCOVER MENU */}
@@ -123,7 +123,7 @@ const NavBar = () => {
 
           {/* CREATE BUTTON SECTION */}
           <div className={Style.navbar_container_right_button}>
-            <Button btnText="Create" />
+            <Button btnName="Create" handleClick={() => {}} />
           </div>
 
           {/* USER PROFILE */}
@@ -154,9 +154,9 @@ const NavBar = () => {
         </div>
       </div>
 
-      {/* SIDBAR COMPONENT */}
+      {/* SIDBAR CPMPONE/NT */}
       {openSideMenu && (
-        <div className={Style.SideBar}>
+        <div className={Style.sideBar}>
           <SideBar setOpenSideMenu={setOpenSideMenu} />
         </div>
       )}

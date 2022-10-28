@@ -8,8 +8,10 @@
 .navbar_container {
   width: 80%;
   margin: 0 auto;
+
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  align-items: center;
   justify-content: space-between;
   gap: 1rem;
 }
@@ -41,21 +43,20 @@
   font-size: 1.4rem;
 }
 
-/* ----------RIGHT */
+/* //-------RIGHT */
 
 .navbar_container_right {
   display: grid;
   grid-template-columns: 1fr 1fr 0.5fr 1fr 0.3fr;
   gap: 1rem;
   align-items: center;
-  align-self: flex-end;
+  /* align-self: flex-end; */
 }
 
 .navbar_container_right_discover {
   position: relative;
   cursor: pointer;
 }
-
 .navbar_container_right_help {
   position: relative;
   cursor: pointer;
@@ -102,4 +103,59 @@
 .menuIcon {
   font-size: 2.5rem;
   cursor: pointer;
+}
+
+/* /////------SIDEBAR */
+
+.sideBar {
+  position: fixed;
+  top: 0;
+  width: 24rem;
+  background-color: var(--main-bg-color);
+  box-shadow: var(--box-shadow);
+  height: 100vh;
+  overflow-y: auto;
+  display: none;
+  z-index: 11111;
+}
+
+.sideBar::-webkit-scrollbar {
+  display: none;
+}
+
+@media screen and (min-device-width: 320px) and (max-device-width: 768px) {
+  .navbar_container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .navbar_container_left {
+    grid-template-columns: 1fr;
+  }
+
+  .navbar_container_right {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .navbar_container_right_menuBtn {
+    display: block;
+  }
+
+  .navbar_container_left_box_input_box {
+    display: none;
+  }
+  .navbar_container_right_discover {
+    display: none;
+  }
+
+  .navbar_container_right_help {
+    display: none;
+  }
+
+  .navbar_container_right_button {
+    display: none;
+  }
+
+  .sideBar {
+    display: block;
+  }
 }
