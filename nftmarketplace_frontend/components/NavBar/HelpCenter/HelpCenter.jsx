@@ -27,6 +27,7 @@ const HelpCenter = () => {
       link: "subscription",
     },
   ];
+
   return (
     <div className={Style.box}>
       {helpCenter.map((el, i) => (
