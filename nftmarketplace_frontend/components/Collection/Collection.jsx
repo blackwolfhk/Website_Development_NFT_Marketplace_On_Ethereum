@@ -41,6 +41,7 @@ const Collection = () => {
       setNews(true);
     }
   };
+
   return (
     <div className={Style.collection}>
       <div className={Style.collection_title}>
