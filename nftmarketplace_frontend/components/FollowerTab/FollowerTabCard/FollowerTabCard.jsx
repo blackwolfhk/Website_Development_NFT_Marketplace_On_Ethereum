@@ -49,12 +49,12 @@ const FollowerTabCard = ({ i, el }) => {
         <div className={Style.FollowerTabCard_box_info}>
           <div className={Style.FollowerTabCard_box_info_name}>
             <h4>
-              Giada Mann{""}{" "}
+              Black Wolf{""}{" "}
               <span>
                 <MdVerified />
               </span>
             </h4>
-            <p>12.321 ETH</p>
+            <p>13.321 ETH</p>
           </div>
 
           <div className={Style.FollowerTabCard_box_info_following}>

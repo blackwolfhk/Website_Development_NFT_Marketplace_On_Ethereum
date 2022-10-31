@@ -13,6 +13,7 @@ import Collection from "./Collection/Collection";
 import AudioLive from "./AudioLive/AudioLive";
 import LikeProfile from "./LikeProfile/LikeProfile";
 import FollowerTab from "./FollowerTab/FollowerTab";
+import Slider from "./Slider/Slider";
 
 export {
   Button,
@@ -30,4 +31,5 @@ export {
   AudioLive,
   LikeProfile,
   FollowerTab,
+  Slider,
 };
