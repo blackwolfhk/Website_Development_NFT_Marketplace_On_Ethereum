@@ -15,6 +15,8 @@ import {
   AudioLive,
   FollowerTab,
   Slider,
+  Brand,
+  Video,
 } from "../components/componentsindex";
 
 const Home = () => {
@@ -42,6 +44,8 @@ const Home = () => {
       <Filter />
       <NFTCard />
       <Subscribe />
+      <Brand />
+      <Video />
       <Title
         heading="Browse by category"
         paragraph="Explore the NFTs in the most featured categories."
