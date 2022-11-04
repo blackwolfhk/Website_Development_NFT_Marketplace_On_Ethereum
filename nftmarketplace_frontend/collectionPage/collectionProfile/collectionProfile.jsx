@@ -44,8 +44,8 @@ const collectionProfile = () => {
         <div className={Style.collectionProfile_box_middle}>
           <h1>Awesome NFTs Collection</h1>
           <p>
-            Karafuru is home to 5,555 generative arts where colors reign
-            supreme. Leave the drab reality and enter the world of Karafuru by
+            Black Wolf is home to 5,555 generative arts where colors reign
+            supreme. Leave the drab reality and enter the world of Black Wolf by
             Museum of Toys.
           </p>
 
