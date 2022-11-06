@@ -4,7 +4,7 @@ import { BsImages } from "react-icons/bs";
 import { AiFillHeart, AiOutlineHeart } from "react-icons/ai";
 import { TiArrowSortedDown, TiArrowSortedUp } from "react-icons/ti";
 
-//INTERNAL IMPORT
+// INTERNAL IMPORT
 import Style from "./NFTDetailsImg.module.css";
 import images from "../../img";
 

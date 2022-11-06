@@ -18,7 +18,7 @@ import {
 } from "react-icons/ti";
 import { BiTransferAlt, BiDollar } from "react-icons/bi";
 
-//INTERNAL IMPORT
+// INTERNAL IMPORT
 import Style from "./NFTDescription.module.css";
 import images from "../../img";
 import { Button } from "../../components/componentsindex.js";
@@ -166,7 +166,7 @@ const NFTDescription = () => {
               <div className={Style.NFTDescription_box_profile_box_left_info}>
                 <small>Creator</small> <br />
                 <span>
-                  Karli Costa <MdVerified />
+                  Black Wolf <MdVerified />
                 </span>
               </div>
             </div>

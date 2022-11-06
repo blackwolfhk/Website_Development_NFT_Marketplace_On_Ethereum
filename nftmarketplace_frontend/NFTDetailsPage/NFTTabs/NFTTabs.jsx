@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 
-//INTERNAL IMPORT
+// INTERNAL IMPORT
 import Style from "./NFTTabs.module.css";
 
 const NFTTabs = ({ dataTab, icon }) => {
@@ -18,7 +18,7 @@ const NFTTabs = ({ dataTab, icon }) => {
           />
           <div className={Style.NFTTabs_box_info}>
             <span>
-              Offer by $770 by <span>Shoaib Bhai</span>
+              Offer by $770 by <span>Black Wolf</span>
               {icon}
             </span>
 
